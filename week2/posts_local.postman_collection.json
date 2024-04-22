@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "12d6a17e-1e10-42e4-b120-4a25d9c514ee",
+		"name": "posts_local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33324322"
+	},
+	"item": [
+		{
+			"name": "取得全部貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://node-wook-02.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"node-wook-02",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"render\",\r\n    \"image\": \"\",\r\n    \"content\": \"測試內容\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-wook-02.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"node-wook-02",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-wook-02.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"node-wook-02",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://node-wook-02.onrender.com/posts/661fdf0584b8c4a6a663bfdd",
+					"protocol": "https",
+					"host": [
+						"node-wook-02",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"661fdf0584b8c4a6a663bfdd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"sihyun render\",\r\n    \"image\": \"\",\r\n    \"content\": \"t2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-wook-02.onrender.com/posts/661fdf0584b8c4a6a663bfdd",
+					"protocol": "https",
+					"host": [
+						"node-wook-02",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"661fdf0584b8c4a6a663bfdd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
